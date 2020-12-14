@@ -5,9 +5,8 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertTrue;
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertTrue;
 
 
 public class petstore {
@@ -28,7 +27,7 @@ public class petstore {
 	    }
 
 	   // @Test
-	    public void test_getAllDogs()
+	    public void test_RetrieveDoggie()
 	    {
 	        given()
 
@@ -40,7 +39,7 @@ public class petstore {
 
 	    //Returning random image and confirming the message
 	    //@Test
-	    public void test_getRandomDog()
+	    public void test_AddNewDog()
 	    {
 	        Response res =
 	        given()
@@ -58,7 +57,7 @@ public class petstore {
 	    }
 
 	    @Test
-	    public void test_getBulldogInAllBreeds()
+	    public void test_Created_Pet()
 	    {
 
 	                given()
